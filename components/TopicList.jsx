@@ -26,19 +26,13 @@ export default async function TopicsList() {
             {topics.map((t) => (
                 <div key={t._id} className="p-4 border border-slate-300 my-3 flex justify-between gap-5 items-center">
                     <div>
+                        <div className="h-auto w-20">
+                            <img src={t.image} alt="Deskripsi gambar" />
+                        </div>
                         <h2 className="font-bold text-2xl">{t.title}</h2>
                         <div>
                             {t.description}
                         </div>
-                        {t.image && (
-                            <img
-                                src={`data:${t.image.contentType};base64,${t.image.data.toString(
-                                    "base64"
-                                )}`}
-                                alt="Topic Image"
-                                style={{ maxWidth: "100%" }}
-                            />
-                        )}
                     </div>
                     <div className="flex gap-2">
                         <RemoveBtn id={t._id} />

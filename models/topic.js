@@ -4,10 +4,7 @@ const topicSchema = new Schema(
     {
         title: String,
         description: String,
-        image: {
-            data: Buffer,  // Binary data for the image
-            contentType: String,  // MIME type of the image
-        },
+        image: String,
     },
     {
         timestamps: true,
