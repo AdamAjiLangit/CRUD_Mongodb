@@ -2,6 +2,8 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ## Getting Started
 
+instal next js using terminal = "npm install next@latest react@latest react-dom@latest"
+
 First, run the development server:
 
 ```bash
